@@ -9,6 +9,8 @@ import ExamsPage from './pages/ExamsPage';
 import PlacementPage from './pages/PlacementPage';
 import FacilityPage from './pages/FacilityPage';
 import SettingsPage from './pages/SettingsPage';
+import StudentsPage from './pages/StudentsPage';
+import StudentDetailPage from './pages/StudentDetailPage';
 
 export default function App() {
   const session = getUserSession();
@@ -42,6 +44,8 @@ export default function App() {
           </ProtectedRoute>
         }
       />
+      <Route path="/students" element={<ProtectedRoute><StudentsPage /></ProtectedRoute>} />
+      <Route path="/students/:id" element={<ProtectedRoute><StudentDetailPage /></ProtectedRoute>} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

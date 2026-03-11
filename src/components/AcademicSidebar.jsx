@@ -6,6 +6,7 @@ const navGroups = [
     label: 'Main Menu',
     items: [
       { to: '/dashboard', icon: 'dashboard', label: 'Dashboard' },
+      { to: '/students',  icon: 'people',    label: 'Students' },
     ],
   },
   {
