@@ -149,6 +149,9 @@ export default function DashboardPage() {
                           } else if (item.toLowerCase() === 'students') {
                             setSidebarOpen(false);
                             navigate(`/students?role=${encodeURIComponent(role)}`);
+                          } else if (item.toLowerCase() === 'notifications') {
+                            setSidebarOpen(false);
+                            navigate(`/notifications?role=${encodeURIComponent(role)}`);
                           } else if (academicRoutes[item]) {
                             setActivePage(academicRoutes[item]);
                             setSidebarOpen(false);
